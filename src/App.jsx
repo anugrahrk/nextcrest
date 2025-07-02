@@ -15,31 +15,31 @@ function App() {
   },
   {
     "title": "Tasty Dish",
-    "image": "/src/assets/img/img2.jpg",
+    "image": "/src/assets/img2.jpg",
     "price": "$12.99",
     "rating": 5
   },
   {
     "title": "Tasty Dish",
-    "image": "/src/assets/img/img3.jpg",
+    "image": "/src/assets/img3.jpg",
     "price": "$10.99",
     "rating": 5
   },
   {
     "title": "Tasty Dish",
-    "image": "/src/assets/img/img4.jpg",
+    "image": "/src/assets/img4.jpg",
     "price": "$11.99",
     "rating": 5
   },
   {
     "title": "Tasty Dish",
-    "image": "/src/assets/img/img5.jpg",
+    "image": "/src/assets/img5.jpg",
     "price": "$10.99",
     "rating": 5
   },
   {
     "title": "Tasty Dish",
-    "image": "/src/assets/img/img6.jpg",
+    "image": "/src/assets/img6.jpg",
     "price": "$12.99",
     "rating": 5
   }

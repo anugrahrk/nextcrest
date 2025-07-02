@@ -14,7 +14,7 @@ function Home() {
   </div>
 </div>
 </div>
-  <div  className='pt-4 pb-30 absolute'><img className='w-8xl' src={Hero}  />
+  <div  className='pt-4 pb-30 absolute'><img className='w-auto' src={Hero}  />
 </div>
 </div>
   )
