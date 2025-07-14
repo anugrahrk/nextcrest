@@ -16,42 +16,42 @@ function App() {
   const[Dish,setDish]=useState([
 {
 "title": "Spicy Chicken Wings",
-"image": "/src/assets/img1.jpg",
+"image": "/images/img1.jpg",
 "price": 10.99,
 "rating": 5,
 "category": "Spicy"
 },
 {
 "title": "Tasty Beef Burger",
-"image": "/src/assets/img2.jpg",
+"image": "/images/img2.jpg",
 "price": 12.99,
 "rating": 5,
 "category": "Tasty"
 },
 {
 "title": "Delicious Pasta",
-"image": "/src/assets/img3.jpg",
+"image": "/images/img3.jpg",
 "price": 10.99,
 "rating": 5,
 "category": "Delicious"
 },
 {
 "title": "Crispy Fried Chicken",
-"image": "/src/assets/img4.jpg",
+"image": "/images/img4.jpg",
 "price": 11.99,
 "rating": 5,
 "category": "Crispy"
 },
 {
 "title": "Spicy Paneer Wrap",
-"image": "/src/assets/img5.jpg",
+"image": "/images/img5.jpg",
 "price": 10.99,
 "rating": 5,
 "category": "Spicy"
 },
 {
 "title": "Delicious Veg Curry",
-"image": "/src/assets/img6.jpg",
+"image": "/images/img6.jpg",
 "price": 12.99,
 "rating": 5,
 "category": "Delicious"

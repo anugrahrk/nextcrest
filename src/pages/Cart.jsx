@@ -30,11 +30,14 @@ function Cart() {
     <div>
       <div className='pt-6 text-center font-sans font-bold text-4xl text-slate-700 text-shadow-2xs text-shadow-gray-600'>Your Cart</div>
       {cart.length!==0 &&
-      <div className='pt-10 pb-5 pr-40 pl-40'>{cart.map((item,index)=><CartElement key={index} dish={item} Remove={()=>removeElement(item)}></CartElement>)}
+      <div className='pt-10 pb-5 pr-40 pl-40'>{cart.map((item,index)=><CartElement key={index} dish={item} Remove={()=>{removeElement(item)
+        setCount(1)}
+      }></CartElement>)}
      <div className='flex justify-end  p-10'> <div className='pr-7  text-slate-700 font-semibold text-4xl'>Total:    $ {totalR<=0?total:(total+totalR).toFixed(2)}</div>
       <button onClick={()=>{
         alert("Purchase Successfull")
         localStorage.removeItem('dish')
+        localStorage.removeItem('cart')
         setCart("")
       }} className='w-20 h-10 bg-green-400 text-white border  shadow-gray-700 shadow-xs border-white rounded-xl hover:bg-green-800 hover:shadow-lg cursor-pointer'>Pay</button>
       </div></div>
