@@ -6,10 +6,15 @@ function CartElement({dish,Remove}) {
   const [price,setPrice]=useState(dish.price)
   const[total,setTotal]=useRecoilState(totalAtom)
   const [count,setCount]=useState(1)
-  console.log(Remove)
+  const [loaded, setLoaded] = useState(false)
+  
   return (
     <div className='shadow-lg p-4 rounded-xl p'><div className='flex justify-between'>
-        <div className='flex space-x-2 pl-5'><img src={dish.image} alt="" className='h-20 w-20 rounded-lg shadow-lg '/>
+        <div className='flex space-x-2 pl-5'>
+          {!loaded && (
+            <div className="w-full h-full bg-gray-300 animate-pulse absolute top-0 left-0 z-0" />
+          )}
+          <img src={dish.image}  loading='lazy' onLoad={()=>setLoaded(true)} alt="" className='h-20 w-20 rounded-lg shadow-lg '/>
         <div className='font-sans font-semibold text-xl text-slate-900 text-shadow-md pl-3 pt-4'>{dish.title}</div>
         </div>
         <div className='flex justify-around space-x-5 pt-4 '>
